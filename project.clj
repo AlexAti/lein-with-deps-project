@@ -7,6 +7,7 @@
   :plugins [[lein-tools-deps "0.4.3"]]
   :middleware [lein-tools-deps.plugin/resolve-dependencies-with-deps-edn]
   :lein-tools-deps/config {:config-files [:install :user :project]}
-  
+
+  :min-lein-version "2.0.0"
   :dependencies [[org.clojure/clojure "1.9.0"]]
   :repl-options {:init-ns lein-with-deps-project.core})
